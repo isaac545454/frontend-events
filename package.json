@@ -1,0 +1,31 @@
+{
+  "name": "@isaac545454/frontend-events",
+  "version": "0.1.0",
+  "description": "Barramento de eventos tipado. O projeto consumidor declara os nomes e os payloads.",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@10.24.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.6.3",
+    "vitest": "^3.2.4"
+  }
+}
