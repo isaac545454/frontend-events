@@ -2,6 +2,24 @@
 
 Barramento de eventos para o frontend. A lib não declara eventos. O projeto consumidor define o nome e o payload, e `pub` / `sub` seguem esse contrato.
 
+Pacote: [`@isaac545454/frontend-events`](https://github.com/isaac545454/frontend-events/releases/tag/v0.1.0)
+
+## Instalação
+
+```bash
+pnpm add github:isaac545454/frontend-events
+```
+
+```bash
+npm install github:isaac545454/frontend-events
+```
+
+```bash
+yarn add github:isaac545454/frontend-events
+```
+
+A instalação a partir do GitHub roda o build e gera `dist`.
+
 ## Uso
 
 ```ts

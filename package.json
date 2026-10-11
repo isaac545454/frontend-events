@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "description": "Barramento de eventos tipado. O projeto consumidor declara os nomes e os payloads.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaac545454/frontend-events.git"
+  },
+  "homepage": "https://github.com/isaac545454/frontend-events#readme",
+  "bugs": {
+    "url": "https://github.com/isaac545454/frontend-events/issues"
+  },
   "type": "module",
   "packageManager": "pnpm@10.24.0",
   "main": "./dist/index.js",
@@ -20,6 +28,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "tsup",
+    "prepare": "pnpm run build",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
